@@ -29,7 +29,7 @@ fun.views.signup = Backbone.View.extend({
             this.signupError = this.$('#signup-error');
             // Form inputs
             this.account = this.$('#signup_username');
-            this.firstname = this('#signup_firstname');
+            this.firstname = this.$('#signup_firstname');
             this.newAccount = this.account;
             this.email = this.$('#signup_email');
             this.phone = this.$('#signup_phone');
