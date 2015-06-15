@@ -1,145 +1,203 @@
-<div class="jumbotron">
-    <div class="container">
-
-        <div class="row">
-            <div id="landing-alert" class="alert alert-danger alert-dismissible hide" role="alert">
-                <button type="button" class="close" data-dismiss="alert">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">
-                        <%= translate("Close") %>
-                    </span>
-                </button>
-                <p></p>
-            </div>        
-        </div>
-        
-        <div class="row">
-                
-            <div class="col-md-8">
-                <h1><%= translate("ioFunBanner") %></h1>
-
-                <div class="landing-text">
-                    <h3>
-                        <%= translate("ioFunLandingText") %>
-                    </h3>
-
-                    <p class="landing-actions">
-                        <a href="#login" class="btn btn-large"><%= translate("getStarted") %></a>
-                        <a href="#enterprise" class="btn btn-large"><%= translate("needEnterpriseResources") %>?</a>
-                    </p>
-                </div>
+<header>
+            <section class="topbar clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="t-left col-sm-7 clearfix">
+                        <span>  <i class="fa fa-map-marker"></i>201  West Birmingham, AL  35204</span>
+                        <span>  <i class="fa fa-envelope"></i> <a href="mailto:info@snakeyevapeshop.com">info@snakeyevapeshop.com</a></span> 
+                        <span>  <i class="fa fa-phone"></i>(843) 995-0545</span> 
+                    </div><!--end:t-left-->
+                   
+                   
+                   <div class="t-right col-sm-6 clearfix">
+                        <ul class="nav">       
+                            <li>
+                                <a href="http://snake.codemachine.io"  data-toggle="modal">
+                                    <i class="fa fa-user"></i>Wholesale/Store Registration Log In
+                                </a>
+                            </li>
+                            <li>
+                                <a href="static/html/contacts.html">
+                                    <i class="fa fa-envelope"></i>Contact
+                                </a>
+                            </li>
                           
-            </div>
+                            <li class="itwm-header-cart">
+                                <a href="https://www.snakeyevape.com">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </li>         
+                    </div><!--end:row-->
+                </div>
+            </section><!--end:topbar-->
+        
+            <div class="nav-container stickmenu clearfix">
+                <div class="inner">
+                    <!-- logo -->
+                    <a href="index.html" class="logo">
+                        <img  src="static/placeholders/main-logo01.png"/> 
+                    </a>
+               <!-- end:logo -->    
 
-            <div class="col-md-4">  
-                <form id="langing-signup-form" class="form-signup" novalidate="novalidate">
-    
-                    <div class="form-group">
-                        <input type="text" id="landing_username" name="landing_username" class="form-control" placeholder="<%= translate("yourUsername") %>" autofocus="">
-                    </div>
+               <!-- main-menu -->
+                    <ul class="main-menu">
+                        <li class="multi-level-menu">
+                            <a href="#">New to Vaping?</a>
+                        
+                            <ul class="sub-menu">
+                                <li><a href="static/html/vaping-guide.html"> Vaping Guide </a> </li>
+                                <li><a href="static/html/industry-research.html">Industry Researh</a></li>
+                                <li><a href="static/html/filling-tank.html"> Filling a Tank</a></li>
+                                <li><a href="static/html/filling-cartomizers.html"> Filling a cartomizer</a></li>
+                                <li><a href="static/html/about-rebuildables.html"> About Rebuildables</a></li>
+                                <li><a href="static/html/coil-building.html">Coil Building</a></li>
+                                <li><a href="static/html/rda-w-cotton-agi.html">RDA W/Cotton (AGI)</a></li>
+                                <li><a href="static/html/building-rba-kayfun.html">Build RBA (Kayfun)</a></li>
+                                <li><a href="static/html/rda-w-dual-helios.html">RDA W/Dual Coil (helios)</a></li>
+                            </ul>
+                        </li>
 
-                    <div class="form-group">
-                        <input type="text" id="landing_email" name="landing_email" class="form-control" placeholder="<%= translate("yourEmail") %>">
-                    </div>
+                        <li class="multi-level-menu">
+                            <a href="#">E Cigars & MODS</a>
+                            
+                            <ul class="sub-menu">
+                                <li><a href="static/html/boxmods.html">Box Mods</a> </li>
+                                <li><a href="static/html/importmods.html">Import Mods</a></li>
+                                <li><a href="static/html/highend.html">High End Mods</a></li>
+                                <li><a href="static/html/ecigars.html">E Cigars</a></li>
+                            </ul>
+                        </li>
 
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="landing_password" name="landing_password" placeholder="<%= translate("createApassword") %>"/>
-                        <p class="text-muted"><%= translate("passwordStuffs") %><p>
-                    </div>
-                    
-                    <button id="landing-signup-btn" class="btn btn-lg btn-primary btn-block" type="submit"><%= translate("signUp") %></button>
-                    <p class="text-muted"><%= translate("clickYouAgree") %> <a href="#terms"><%= translate("termsOfService") %></a> <%= translate("and") %> <a href="#privacy"><%= translate("privacyPolicy") %></a>. <%= translate("willSendRelatedEmails") %>.</p>
-                </form>
-            </div>
-        </div>
+                        <li class="multi-level-menu">
+                            <a href="static/html/sev-products.html">Starter Kits</a>
+                        </li>
+                        <!--end: submenu-->
 
-    </div>
-</div>
-      
+                        <li class="multi-level-menu">
+                            <a href="static/html/sev-products4.html">Batteries & Chargers</a>
+                        </li>
+                        <!--megamenu-->
+                        <li class="multi-level-menu">
+                            <a href="static/html/sev-products2.html">Atomizers</a>
+                            <ul class="sub-menu">
+                                <li><a href="static/html/dripping.html">Rebuildable Dripping Atomizer</a> </li>
+                                <li><a href="static/html/thanks.html">Tanks & Subtanks</a></li>  
+                            </ul>
+                        </li>
+                        <!--end:megamenu-->
+                        <li class="multi-level-menu">
+                            <a href="#">Juices</a>
+                            <ul class="sub-menu">
+                                <li><a href="static/html/andirondack.html"> Andirondack  Vapor </a> </li>
+                                <li><a href="static/html/ism.html">ISM Vape</a></li>
+                                <li><a href="static/html/kingcloud.html">King of the Clouds</a></li>
+                                <li><a href="static/html/fowsbrew.html"> Fows brew</a></li>
+                                <li><a href="static/html/jetfuel.html"> Jet Fuel</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <!--end: submenu-->
+                                          
+                        <li class="multi-level-menu">
+                            <a href="static/html/coils.html">Coils</a>
+                        </li>
 
-<div class="container marketing">
+                        <li class="multi-level-menu">
+                            <a href="#">Accessories</a>
+                            <ul class="sub-menu">
+                                <li><a href="static/html/dryherb.html">Dry Herb & Wax Vaporizers </a> </li>
+                                <li><a href="static/html/waxcdb.html">Wax CBD Oil & Accessories</a></li>
+                            </ul>
+                        </li>
+                           
+                        <li class="multi-level-menu active">
+                            <a href="http://snakeyevape.com">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="http://snakeyevape.com/Novelty-Items_c13.htm">Novelty Items</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- end:main-menu -->
 
-    <div class="row">
+                    <div id="mobile-menu" class="dl-menuwrapper">
+                        <button class="dl-trigger"><i class="fa fa-bars"></i></button>
+                        <ul class="dl-menu">
+                           
+                            <li class="multi-level-menu">
+                                <a href="#">New to Vaping?</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="static/html/vaping-guide.html"> Vaping Guide </a> </li>
+                                    <li><a href="static/html/industry-research.html">Industry Researh</a></li>
+                                    <li><a href="static/html/filling-tank.html"> Filling a Tank</a></li>
+                                    <li><a href="static/html/filling-cartomizers.html"> Filling a cartomizer</a></li>
+                                    <li><a href="static/html/about-rebuildables.html"> About Rebuildables</a></li>
+                                    <li><a href="static/html/coil-building.html">Coil Building</a></li>
+                                    <li><a href="static/html/rda-w-cotton-agi.html">RDA W/Cotton (AGI)</a></li>
+                                    <li><a href="static/html/building-rba-kayfun.html">Build RBA (Kayfun)</a></li>
+                                    <li><a href="static/html/rda-w-dual-helios.html">RDA W/Dual Coil (helios)</a></li>
+                                </ul>
+                            
+                            </li>
+                            <li class="multi-level-menu">
+                                <a href="#">E Cigars & MODS</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="static/html/boxmods.html">Box Mods</a> </li>
+                                    <li><a href="static/html/importmods.html">Import Mods</a></li>
+                                    <li><a href="static/html/highend.html">High End Mods</a></li>
+                                    <li><a href="static/html/ecigars.html">E Cigars</a></li> 
+                                </ul>
+                            </li>
 
-        <div class="col-md-12 marketing-header">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-heartbeat  fa-stack-1x"></i>
-            </span>
-<!--
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-spinner fa-stack-1x"></i>
-            </span>
--->
-            <h2><%= translate("youLoveIt") %></h2>         
-            <h3><%= translate("powerComCamColIntAndS") %>.</h3>
+                            <li>
+                                <a href="static/html/sev-products.html">Starter Kits</a>   
+                            </li>
 
-            <!--<p><%= translate("oldMan") %></p> <b><%= translate("oldManAristotle") %></b>-->
-            
-        </div>
-    </div>
+                            <li>
+                                <a href="static/html/sev-products4.html">Batteries & Chargers</a>
+                            </li>
 
-    <div class="row">
+                            <li>
+                                <a href="static/html/sev-products2.html">Atomizers</a>
+                                <ul class="sub-menu">
+                                    <li><a href="static/html/dripping.html">Rebuildable Dripping Atomizer</a> </li>
+                                    <li><a href="static/html/thanks.html">Tanks & Subtanks</a></li>
+                                </ul>
+                            </li>
 
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-bullhorn fa-stack-1x"></i>
-            </span>
+                            <li class="multi-level-menu">
+                                <a href="#">Juices</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="static/html/andirondack.html"> Andirondack  Vapor </a> </li>
+                                    <li><a href="static/html/ism.html">ISM Vape</a></li>
+                                    <li><a href="static/html/kingcloud.html">King of the Clouds</a></li>
+                                    <li><a href="static/html/fowsbrew.html"> Fows brew</a></li>
+                                    <li><a href="static/html/jetfuel.html"> Jet Fuel</a></li>
+                                </ul>
+                            </li>
 
-            <h3><%= translate("bcastMsgsThsndsCnts") %>.</h3>
-            <p><%= translate("sndVoiceMsgsCnts") %>.</p>
-        </div>
+                            <li class="multi-level-menu">
+                                <a href="static/html/coils.html">Coils</a>
+                            </li>
 
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-users fa-stack-1x"></i>
-            </span>
+                            <li class="multi-level-menu">
+                                <a href="#">Accessories</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="static/html/dryherb.html">Dry Herb & Wax Vaporizers </a> </li>
+                                    <li><a href="static/html/waxcdb.html">Wax CBD Oil & Accessories</a></li>
+                                </ul>
+                            </li>
 
-            <h3><%= translate("orgToolMonkeys") %>.</h3>
-            <p><%= translate("orgToolMonkeyDescription") %>.</p>
-        </div>
+                            <li class="multi-level-menu active">
+                                <a href="http://snakeyevape.com/main.sc">Shop</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="http://snakeyevape.com/Novelty-Items_c13.htm">Novelty Items</a> </li> 
+                                </ul>
+                            </li>
 
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-pie-chart fa-stack-1x"></i>
-            </span>
-
-            <h3><%= translate("greatComStartWcoll") %>.</h3>
-            <p><%= translate("planFutureDiscussionTools") %>.</p>
-        </div>
-
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <!-- <i class="fa fa-cloud fa-stack-1x"></i> -->
-                <i class="fa fa-phone fa-stack-1x"></i>
-            </span>
-
-            <h3><%= translate("manageInbondAndOutbound") %>.</h3>
-            <p><%= translate("matchCallersandTeams") %>.</p>
-        </div>
-    </div>
-
-    <!-- enterprise -->
-    <div class="row">
-        <div class="col-md-12 marketing-header">
-
-            <h2><%= translate("bringFunDataCenter") %>.</h2>
-
-            <h3><%= translate("useFunEnterprise") %>.</h3>
-
-            <p class="landing-actions">
-                <a href="#enterprise" class="btn btn-large"><%= translate("learnAboutEnterprise") %></a>
-            </p> 
-            
-        </div>
-    </div>
-</div> <!-- /container -->  
+                        </ul>
+                    </div><!-- /dl-menuwrapper -->
+                </div>
+                 <!--end:inner-->
+            </div><!--end:nav-container-->
+        
+        </header>
