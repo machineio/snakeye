@@ -62,7 +62,6 @@ fun.views.signup = Backbone.View.extend({
             rules,
             validationRules,
             callbacks,
-            clxCbacks,
             validForm;
         event.preventDefault();
         signupError = this.signupError;
@@ -151,29 +150,6 @@ fun.views.signup = Backbone.View.extend({
         validForm = $('#signup-form').valid();
         if (validForm){
             //event.preventDefault();
-
-            clxCbacks = {
-                success: function(){
-                    console.log('CLX Success');
-                },
-                error: function(model, error){
-                    console.log('CLX Error');
-                }
-            };
-
-            this.clxRegister = new fun.models.Register();
-            this.clxRegister.save({
-                "Culture" : "en-US",
-                "ApplicationId" : fun.conf.clxAppId,
-                "User" : {
-                    "Name": firstname, 
-                    "LastName": "Doe", 
-                    "Password": password,
-                    "Email": email,
-                    "CountryCode": "1",
-                    "CellPhone": phone
-                }
-            }, clxCbacks);
 
             this.model = new fun.models.Account();
             this.model.save(
