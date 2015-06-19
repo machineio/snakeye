@@ -13,26 +13,8 @@
     </div>
 
     <div class="row">
-        <div class="col-md-6 left_box">
-            <div class="perk_box">
-                <h3><%= translate("itsFastToGetStarted") %>.</h3>
-                <p>Get running in seconds with your own iofun account.</p>
-                <div class="perk">
-                    <span class="icos ico1"></span>
-                    <p>Call tracking, detailed record analytics.</p>
-                </div>
-                <div class="perk">
-                    <span class="icos ico2"></span>
-                    <p>Complete campaign management for inbound and outbound.</p>
-                </div>
-                <div>
-                    <p>Already have an account?</p>
-                    <button id="login-btn" class="btn btn-lg btn-secondary btn-block" type="login"><%= translate("signIn") %></button>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-md-5">
+        <div class="col-md-12">
             <form id="signup-form" class="form-signup" novalidate="novalidate">
                 <h3><%= translate("createYourUserAccount") %></h3>
 
@@ -51,6 +33,88 @@
                 <div class="form-group">
                     <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="<%= translate("confirmPassword") %>"/>
                 </div>
+
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_company_name" name="reg_company_name" placeholder="<%= translate("companyName") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_street_address" name="reg_street_address" placeholder="<%= translate("streetAddress") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_city_town" name="reg_city_town" placeholder="<%= translate("cityTown") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_state_province" name="reg_state_province" placeholder="<%= translate("stateProvince") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_zip_postal" name="reg_zip_postal" placeholder="<%= translate("zipPostal") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_country_company" name="reg_country_company" placeholder="<%= translate("countryCompany") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_dba" name="reg_dba" placeholder="<%= translate("dba") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_telephone" name="reg_telephone" placeholder="<%= translate("telephone") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_fax" name="reg_fax" placeholder="<%= translate("fax") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_company_email" name="reg_company_email" placeholder="<%= translate("companyEmail") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_incorporated_number" name="reg_incorporated_number" placeholder="<%= translate("incorporatedNumber") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_legal_company_name" name="reg_legal_company_name" placeholder="<%= translate("legalCompanyName") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_date_incorporation" name="reg_date_incorporation" placeholder="<%= translate("dateOfIncorporation") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_incorporated_address" name="reg_incorporated_address" placeholder="<%= translate("incorporatedAddress") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_incorporated_state" name="reg_incorporated_state" placeholder="<%= translate("incorporatedStateProvince") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_incorporated_country" name="reg_incorporated_country" placeholder="<%= translate("incorporatedCountry") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_federal_tax_id" name="reg_federal_tax_id" placeholder="<%= translate("federalTaxId") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_vat_tax_id" name="reg_vat_tax_id" placeholder="<%= translate("vatTaxIdFileNumber") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_subsidiary_name" name="reg_subsidiary_name" placeholder="<%= translate("ifCompanySubsidiaryName") %>"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reg_subsidiary_reg_num" name="reg_subsidiary_reg_num" placeholder="<%= translate("ifCompanySubsidiaryRegistrationNum") %>"/>
+                </div>
+
 
                 <button id="signup-btn" class="btn btn-lg btn-primary btn-block" type="submit"><%= translate("signUp") %></button>
 
