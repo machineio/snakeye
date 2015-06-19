@@ -45,6 +45,7 @@ fun.conf = {
 
     uuidRecord: 'record_uuid',
     uuidBilling: 'billing_uuid',
+    uuidCompany: 'company_uuid',
 
     uuidPayment: 'payment_uuid',
     uuidTransaction: 'transaction_uuid',
@@ -113,6 +114,11 @@ fun.conf.urls = {
 
 
     // --- end new api
+
+    // --- start new extractor stuff for companies and stuff
+
+    company: fun.utils.format('/companies/%s', fun.conf.uuidCompany),
+    companies: '/companies/',
 
     payment: fun.utils.format('/cuallix/payments/%s', fun.conf.uuidPayment),
     payments: '/cuallix/payments/',

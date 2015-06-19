@@ -143,19 +143,6 @@ fun.views.signup = Backbone.View.extend({
         view = this;
         // form validation rules
         
-        //'''
-        //    reg_street_address');
-        //    this.cityTown = this.$('#reg_city_town');
-        //    this.stateProvince = this.$('#reg_state_province');
-        //    this.zipPostal = this.$('#reg_zip_postal');
-        //    this.countryCompany = this.$('#reg_country_company');
-        //    this.dba = this.$('#reg_dba');
-        //    this.telephone = this.$('#reg_telephone');
-        //    this.fax = this.$('#reg_fax');
-        //    this.companyEmail = this.$('#reg_company_email');
-        //    this.legalCompanyName = this.$('#reg_legal_company_name');
-        //'''
-        
         rules = {
             rules: {
                 reg_signup_username: {
@@ -273,14 +260,30 @@ fun.views.signup = Backbone.View.extend({
         // check for a valid form and create the new user account
         validForm = $('#signup-form').valid();
         if (validForm){
-            //event.preventDefault();
-
-            this.model = new fun.models.Account();
+            this.model = new fun.models.Company();
             this.model.save(
                 {
                     account: account,
                     password: password,
-                    email: email
+                    email: email,
+                    company_name: companyName,
+                    street_address: streetAddress,
+                    city_town: cityTown,
+                    state_province: stateProvince,
+                    zip_postal: zipPostal,
+                    country_company: countryCompany,
+                    dba: dba,
+                    telephone: telephone,
+                    fax: fax,
+                    company_email: companyEmail,
+                    incorporated_number: incorporatedNumber,
+                    incorporated_state_province: incorporatedStateProvince,
+                    incorporated_address: incorporatedAddress,
+                    incoportated_country: incorporatedCountry,
+                    federal_tax_id: federalTaxId,
+                    vat_tax_id_file_number: vatTaxIdFileNumber,
+                    subsidiary_name: ifCompanySubsidiaryName,
+                    subsidiary_reg_num: ifCompanySubsidiaryRegistrationNum
                 },
                 callbacks
             );
