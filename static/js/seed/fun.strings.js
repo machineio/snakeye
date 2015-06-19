@@ -45,7 +45,7 @@ fun.strings = {
     telephone: "Telephone",
     dba: "DBA (Doing Business As)",
     countryCompanyIsOperatingForm: "Country Company is Operating From",
-    zip: "Zip / Postal Code",
+    zipPostal: "Zip / Postal Code",
     state: "State / Province",
 
     hours: "Hours",
@@ -254,6 +254,7 @@ fun.strings = {
     country: "Country",
     timezone: "Timezone",
     company: "Company",
+    companyEmail: "Company Email",
     location: "Location",
     updateProfile: "Update Profile",
     profileInformation: "Profile Information",
