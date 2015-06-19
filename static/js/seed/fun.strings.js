@@ -38,6 +38,16 @@ fun.strings = {
     ifCompanySubsidiaryName: "If your company is a subsidiary of or related to another company, provide the name.",
     ifCompanySubsidiaryRegistrationNum: "If your company is a subsidiary of another company, provide the registration no. of the parent or related company",
 
+    legalCompanyName: "Legal Company Name",
+    incorporatedNumber: "Incorporated Number",
+    companyName: "Company Name",
+    fax: "Fax",
+    telephone: "Telephone",
+    dba: "DBA (Doing Business As)",
+    countryCompanyIsOperatingForm: "Country Company is Operating From",
+    zip: "Zip / Postal Code",
+    state: "State / Province",
+
     hours: "Hours",
     days: "Days",
     weeks: "Weeks",
