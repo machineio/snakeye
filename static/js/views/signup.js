@@ -217,27 +217,38 @@ fun.views.signup = Backbone.View.extend({
         callbacks = {
             success: function(){
                 // Clear the stuff from the inputs ;)
-                view.$('#signup_username').val('');
-                view.$('#signup_firstname').val('');
-                view.$('#signup_email').val('');
-                view.$('#signup_phone').val('');
-                view.$('#signup_password').val('');
-                view.$('#confirm_password').val('');
+                view.$('#reg_signup_username').val('');
+                view.$('#reg_signup_firstname').val('');
+                view.$('#reg_signup_email').val('');
+                view.$('#reg_signup_phone').val('');
+                view.$('#reg_signup_password').val('');
+                view.$('#reg_confirm_password').val('');
+
+                view.$('#reg_confirm_password').val('');
+                view.$('#reg_company_name').val('');
+                view.$('#reg_street_address').val('');
+                view.$('#reg_city_town').val('');
+                view.$('#reg_state_province').val('');
+                view.$('#reg_zip_postal').val('');
+                view.$('#reg_country_company').val('');
+                view.$('#reg_dba').val('');
+                view.$('#reg_telephone').val('');
+                view.$('#reg_fax').val('');
+
+                view.$('#reg_company_email').val('');
+                view.$('#reg_incorporated_number').val('');
+                view.$('#reg_legal_company_name').val('');
+                view.$('#reg_date_incorporation').val('');
+                view.$('#reg_incorporated_address').val('');
+                view.$('#reg_incorporated_state').val('');
+                view.$('#reg_incorporated_country').val('');
+                view.$('#reg_federal_tax_id').val('');
+
+                view.$('#reg_vat_tax_id').val('');
+                view.$('#reg_subsidiary_name').val('');
+                view.$('#reg_subsidiary_reg_num').val('');
+
                 signupError.hide();
-                // login the created user
-                fun.utils.login(account, password,
-                    {
-                        success : function(xhr, status){
-                            $('#signupModal').modal('hide');
-                            fun.utils.redirect(fun.conf.hash.dashboard);
-                        },
-                        error : function(xhr, status, error){
-                            // aqui es donde tiene sentido 
-                            // enviar al dude a login con un error.
-                            fun.utils.redirect(fun.conf.hash.login);
-                        }
-                    }
-                );
             },
 
             error: function(model, error){
