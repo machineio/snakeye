@@ -15,17 +15,11 @@ fun.views.footer = Backbone.View.extend({
         this.$el.html(template);
         this.$el.show();
 
-        var account = localStorage.getItem("username", username);
-
-        if (typeof account === undefined || account === null || account === ''){
-            $('#ageModal').modal({
-                'show': true,
-                'backdrop': 'static',
-                'keyboard': true
-            });
-        } else {
-            console.log('check this stuff up');
-        }
+        $('#ageModal').modal({
+            'show': true,
+            'backdrop': 'static',
+            'keyboard': true
+        });
     }
 
 });
