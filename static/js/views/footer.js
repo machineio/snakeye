@@ -1,8 +1,8 @@
 fun.views.footer = Backbone.View.extend({
 
     events: {
-        'click #age-minus': ageMinus,
-        'click #age-plus': agePlus
+        'click #age-minus': 'ageMinus',
+        'click #age-plus': 'agePlus'
     },
 
     initialize: function(options) {
