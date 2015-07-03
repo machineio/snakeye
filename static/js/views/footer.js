@@ -21,7 +21,7 @@ fun.views.footer = Backbone.View.extend({
             'backdrop': 'static',
             'keyboard': true
         });
-    }
+    },
 
     ageMinus: function(){
         console.log('get out of here!');
