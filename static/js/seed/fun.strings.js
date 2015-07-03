@@ -18,6 +18,7 @@ fun.strings = {
     merchant: "Merchant",
     merchantId:"Merchant ID",
     ageVerification: "Age Verification",
+    ageStuffs: "The products and services featured on this website are intended for adults only. By entering this website, you verify that you are over the age of 18 and are of legal smoking age.",
     email: "Email",
     card_name: "Card Name",
     credit_card_type: "Card Type",
