@@ -17,6 +17,7 @@ fun.strings = {
     to: "To",
     merchant: "Merchant",
     merchantId:"Merchant ID",
+    ageVerification: "Age Verification",
     email: "Email",
     card_name: "Card Name",
     credit_card_type: "Card Type",
