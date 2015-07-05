@@ -82,8 +82,8 @@ fun.Router = Backbone.Router.extend({
     landing: function(){
 
         fun.utils.hideAll();
-
         fun.instances.navbar.render();
+        console.log('after landing');
         fun.instances.landing.render();
         fun.instances.footer.render();
     },
