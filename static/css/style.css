@@ -4163,7 +4163,7 @@ ul.post-meta-infos {
   height:42px;
   border:0px;
   padding:0px 35px;
-  line-height:40px;
+  line-height:50px;
   -webkit-border-radius: 3px; 
   -moz-border-radius: 3px; 
   -o-border-radius: 3px; 
@@ -4199,7 +4199,7 @@ ul.post-meta-infos {
 
 .btn-large {
   font-size:14px;
-  height:60px;
+  height:50px;
   padding:0px 50px;
 }
 .btn:active,
