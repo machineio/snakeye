@@ -248,7 +248,7 @@ body.boxed .wrapper {
 	position: fixed;
 	bottom: 2em;
 	right: 10px;
-	background-color: #3d3d3d;
+	background-color: #0f0f0f;
 	font-size: 12px;
 	display: none;
 	width:40px;
@@ -561,7 +561,7 @@ header .logo img {
 	width:100%;
 	min-height:170px;
 	margin-top:0;
-	background:url("static/images/backgrounds/header.png") no-repeat scroll center bottom,linear-gradient(-45deg, #673c8e, #236295, #9869ff) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background:#ce5f28;
 	background-size:cover;
 	/*if ie9 */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#673c8e', endColorstr='#9869ff',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */	
@@ -2022,7 +2022,7 @@ footer .widget_recent_post li a span {
 	background-color:#dd5e2b;
 	}	
 .light-foot .copyright {
-	background:#3d3d3d;
+	background:#0f0f0f;
 	color:#f2f2f2;
 	}
 .light-foot .copyright > div a {
@@ -4163,7 +4163,7 @@ ul.post-meta-infos {
   height:42px;
   border:0px;
   padding:0px 35px;
-  line-height:40px;
+  line-height:50px;
   -webkit-border-radius: 3px; 
   -moz-border-radius: 3px; 
   -o-border-radius: 3px; 
@@ -4199,7 +4199,7 @@ ul.post-meta-infos {
 
 .btn-large {
   font-size:14px;
-  height:60px;
+  height:50px;
   padding:0px 50px;
 }
 .btn:active,
@@ -7780,7 +7780,7 @@ blockquote.style5 {
 		width:25%;
 	}
 	.grid-gallery.four-col li.large {
-		width:50%;
+		width:41%;
 	}
 /* Slide wwith content */
 	.single-gallery.content-slide li {
