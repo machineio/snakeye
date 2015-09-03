@@ -71,7 +71,7 @@ fun.views.navbar = Backbone.View.extend({
             console.log('ehre ar yu maria');
             console.log(validAge);
 
-            if (validAge != true){
+            if (Boolean(validAge) != true){
 
                 $('#ageModal').modal({
                     'show': true,
