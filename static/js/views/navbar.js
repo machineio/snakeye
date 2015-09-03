@@ -68,6 +68,9 @@ fun.views.navbar = Backbone.View.extend({
 
             var validAge = localStorage.getItem("validAge");
 
+            console.log('ehre ar yu maria');
+            console.log(validAge);
+
             if (validAge != true){
 
                 $('#ageModal').modal({
