@@ -65,11 +65,19 @@ fun.views.navbar = Backbone.View.extend({
             //this.renderLanding();
             console.log('And this is no dungeon');
 
-            $('#ageModal').modal({
-                'show': true,
-                'backdrop': 'static',
-                'keyboard': true
-            });
+
+            var validAge = localStorage.getItem("validAge");
+
+            if (validAge != true){
+
+                $('#ageModal').modal({
+                    'show': true,
+                    'backdrop': 'static',
+                    'keyboard': true
+                });
+
+            }
+            
         }
     },
 
@@ -452,10 +460,12 @@ fun.views.navbar = Backbone.View.extend({
 
     ageMinus: function(){
         console.log('get out of here!');
+        localStorage.setItem('validAge', false);
     },
 
     agePlus: function(){
         console.log('let me in');
+        localStorage.setItem('validAge', true);
         $('#ageModal').modal('hide');
     }
 });
