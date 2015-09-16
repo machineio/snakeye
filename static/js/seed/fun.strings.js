@@ -39,7 +39,7 @@ fun.strings = {
     vatTaxIdFileNumber: "VAT / TAX ID / File Number",
     ifCompanySubsidiaryName: "If your company is a subsidiary of or related to another company, provide the name.",
     ifCompanySubsidiaryRegistrationNum: "If your company is a subsidiary of another company, provide the registration no. of the parent or related company",
-
+    incorporatedNumberInternational: "Incorporated Number (Internaltional Only)",
     legalCompanyName: "Legal Company Name",
     incorporatedNumber: "Incorporated Number",
     companyName: "Company Name",
