@@ -5,9 +5,7 @@ fun.views.navbar = Backbone.View.extend({
         "click #fun-signup": 'signupPopup',
         "click #fun-login": 'loginPopup',
         "click #signup-btn": 'signup',
-        "click #login-btn": 'login',
-        "click #age-minus": 'ageMinus',
-        "click #age-plus": 'agePlus'
+        "click #login-btn": 'login'
 	},
 
     initialize: function(options) {

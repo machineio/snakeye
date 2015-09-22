@@ -1,7 +1,8 @@
 fun.views.footer = Backbone.View.extend({
 
     events: {
-
+        "click #age-minus": 'ageMinus',
+        "click #age-plus": 'agePlus'
     },
 
     initialize: function(options) {
@@ -26,6 +27,17 @@ fun.views.footer = Backbone.View.extend({
             });
 
         }
+    },
+
+    ageMinus: function(){
+        console.log('get out of here!');
+        localStorage.setItem('validAge', false);
+    },
+
+    agePlus: function(){
+        console.log('let me in');
+        localStorage.setItem('validAge', true);
+        $('#ageModal').modal('hide');
     }
 
 });
