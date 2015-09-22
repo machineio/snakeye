@@ -20,7 +20,7 @@ fun.views.footer = Backbone.View.extend({
 
         console.log(Boolean(validAge));
 
-        if (JSON.parse(validAge.toLowerCase()) !== true){
+        if (validAgge === null || JSON.parse(validAge.toLowerCase()) !== true){
 
             $('#ageModal').modal({
                 'show': true,
