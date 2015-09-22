@@ -18,8 +18,6 @@ fun.views.footer = Backbone.View.extend({
 
         var validAge = localStorage.getItem("validAge");
 
-        console.log(Boolean(validAge));
-
         if (validAge === null || JSON.parse(validAge.toLowerCase()) !== true){
 
             $('#ageModal').modal({
