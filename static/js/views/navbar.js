@@ -24,8 +24,7 @@ fun.views.navbar = Backbone.View.extend({
     render: function(){
         'use strict';
         var template,
-            data,
-            validAge;
+            data;
 
         data = {
             account: this.account
@@ -65,19 +64,6 @@ fun.views.navbar = Backbone.View.extend({
             console.log('Out of the dungeon');
             //this.renderLanding();
             console.log('And this is no dungeon');
-
-            validAge = localStorage.getItem("validAge");
-
-            if (Boolean(validAge) != true){
-
-                $('#ageModal').modal({
-                    'show': true,
-                    'backdrop': 'static',
-                    'keyboard': true
-                });
-
-            }
-            
         }
     },
 

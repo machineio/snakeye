@@ -14,6 +14,18 @@ fun.views.footer = Backbone.View.extend({
         );
         this.$el.html(template);
         this.$el.show();
+
+        var validAge = localStorage.getItem("validAge");
+
+        if (Boolean(validAge) != true){
+
+            $('#ageModal').modal({
+                'show': true,
+                'backdrop': 'static',
+                'keyboard': true
+            });
+
+        }
     }
 
 });
