@@ -5,9 +5,7 @@ fun.views.navbar = Backbone.View.extend({
         "click #fun-signup": 'signupPopup',
         "click #fun-login": 'loginPopup',
         "click #signup-btn": 'signup',
-        "click #login-btn": 'login',
-        "click #age-minus": 'ageMinus',
-        "click #age-plus": 'agePlus'
+        "click #login-btn": 'login'
 	},
 
     initialize: function(options) {
@@ -64,12 +62,6 @@ fun.views.navbar = Backbone.View.extend({
             console.log('Out of the dungeon');
             //this.renderLanding();
             console.log('And this is no dungeon');
-
-            $('#ageModal').modal({
-                'show': true,
-                'backdrop': 'static',
-                'keyboard': true
-            });
         }
     },
 
@@ -452,10 +444,12 @@ fun.views.navbar = Backbone.View.extend({
 
     ageMinus: function(){
         console.log('get out of here!');
+        localStorage.setItem('validAge', false);
     },
 
     agePlus: function(){
         console.log('let me in');
+        localStorage.setItem('validAge', true);
         $('#ageModal').modal('hide');
     }
 });
