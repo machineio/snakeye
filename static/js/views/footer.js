@@ -16,7 +16,7 @@ fun.views.footer = Backbone.View.extend({
         this.$el.html(template);
         this.$el.show();
 
-        var validAge = localStorage.getItem("validAge");
+        var validAge = sessionStorage.getItem("validAge");
 
         if (validAge === null || JSON.parse(validAge.toLowerCase()) !== true){
 
@@ -31,12 +31,12 @@ fun.views.footer = Backbone.View.extend({
 
     ageMinus: function(){
         console.log('get out of here!');
-        localStorage.setItem('validAge', false);
+        sessionStorage.setItem('validAge', false);
     },
 
     agePlus: function(){
         console.log('let me in');
-        localStorage.setItem('validAge', true);
+        sessionStorage.setItem('validAge', true);
         $('#ageModal').modal('hide');
     }
 
