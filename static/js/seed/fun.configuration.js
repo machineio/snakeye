@@ -184,6 +184,39 @@ fun.conf.templates = {
     
     dashboard: fun.utils.format('%s/dashboard.html', fun.conf.html),
 
+    vapingGuide: fun.utils.format('%s/vaping-guide.html', fun.conf.html),
+
+    industryResearch: fun.utils.format('%s/industry-research.html', fun.conf.html),
+    fillingTank: fun.utils.format('%s/filling-tank.html', fun.conf.html),
+    fillingCartomizers: fun.utils.format('%s/filling-cartomizers.html', fun.conf.html),
+    aboutRebuildables: fun.utils.format('%s/about-rebuildables.html', fun.conf.html),
+    coilBuilding: fun.utils.format('%s/coil-building.html', fun.conf.html),
+    rdaWcottonAgi: fun.utils.format('%s/rda-w-cotton-agi.html', fun.conf.html),
+    buildingRbaKayfun: fun.utils.format('%s/building-rba-kayfun.html', fun.conf.html),
+    dualHelios: fun.utils.format('%s/dual-helios.html', fun.conf.html),
+
+
+    boxMods: fun.utils.format('%s/boxMods.html', fun.conf.html),
+    importMods: fun.utils.format('%s/importMods.html', fun.conf.html),
+    highend: fun.utils.format('%s/highend.html', fun.conf.html),
+    ecigars: fun.utils.format('%s/ecigars.html', fun.conf.html),
+    starterKits: fun.utils.format('%s/starterKits.html', fun.conf.html),
+    batteries: fun.utils.format('%s/batteries.html', fun.conf.html),
+    atomizers: fun.utils.format('%s/atomizers.html', fun.conf.html),
+    dripping: fun.utils.format('%s/dripping.html', fun.conf.html),
+    tanks: fun.utils.format('%s/tanks.html', fun.conf.html),
+
+
+    andirondack: fun.utils.format('%s/andirondack.html', fun.conf.html),
+    ism: fun.utils.format('%s/ism.html', fun.conf.html),
+    kingcloud: fun.utils.format('%s/kingcloud.html', fun.conf.html),
+    fogsbrew: fun.utils.format('%s/fogsbrew.html', fun.conf.html),
+    jetfuel: fun.utils.format('%s/jetfuel.html', fun.conf.html),
+    coils: fun.utils.format('%s/coils.html', fun.conf.html),
+    dryherb: fun.utils.format('%s/dryherb.html', fun.conf.html),
+    waxcdb: fun.utils.format('%s/waxcdb.html', fun.conf.html),
+    novelty: fun.utils.format('%s/novelty.html', fun.conf.html),
+
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
     
     recordRow: fun.utils.format('%s/recordRow.html', fun.conf.html),
@@ -264,6 +297,36 @@ fun.conf.hash = {
     status: '#status',
     signup: '#signup',
     login: '#login',
+
+    vapingGuide: '#vaping-guide',
+    industryResearch: '#industry-research',
+    fillingTank: '#filling-tank',
+    fillingCartomizers: '#filling-cartomizers',
+    aboutRebuildables: '#about-rebuildables',
+    coilBuilding: '#coil-building',
+    rdaWcottonAgi: '#rda-w-cotton-agi',
+    buildingRbaKayfun: '#building-rba-kayfun',
+    dualHelios: '#dual-helios',
+
+    boxMods: '#box-mods',
+    importMods: '#import-mods',
+    highend: '#highend',
+    ecigars: '#ecigars',
+    starterKits: '#starter-kits',
+    batteries: '#batteries',
+    atomizers: '#atomizers',
+    dripping: '#dripping',
+    tanks: '#tanks',
+
+    andirondack: '#andirondack',
+    ism: '#ism',
+    kingcloud: '#kingcloud',
+    fogsbrew: '#fogsbrew',
+    jetfuel: '#jetfuel',
+    coils: '#coils',
+    dryherb: '#dryherb',
+    waxcdb: '#waxcdb',
+    novelty: '#novelty',
 
     dashboard : '#dashboard',
     dashboardWithAccount: '#dashboard/a{account}',
