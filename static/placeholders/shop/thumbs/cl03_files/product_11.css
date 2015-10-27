@@ -1,0 +1,477 @@
+/************************************
+ Product Presentation Style 11
+ Layout for product presentation
+ 11/11/2010
+ ************************************/
+ 
+/*
+Page Layout:
+
+<div class="main-content">
+	<div class="product-page">
+		<div class="product-detail content-block">
+			<div class="product-primary">
+				<div class="imageanddetails">
+					<div class="product-image">
+						<div class="filmstrip-preview">
+							<span id="zoomImageURL"></span>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<img id="filmstripPreview">
+
+						<div class="clicktozoom">
+						<div class="filmstrip-thumbnails">
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<a>
+												<img class="fst-img">
+				<div class="product-description ">				
+				<div class="product-details">
+					<ul>
+						<li>
+							<em>
+								<div class="product-features ">
+									<ul>
+										<li>
+											<em>
+			<div class="product-secondary">
+				<div class="product-detail-header">
+					<h1>
+				<div class="product-options clearfix">
+					<form id="addToCartForm">
+						<div class="product-options-div">
+							<div class="price-cont">
+								<span class="label">
+									<em>
+								<span class="field">
+									<span class="price list strike">
+							<div class="price-cont">
+								<span class="label">
+									<em>
+								<span class="field">
+									<span class="price sale" id="listPrice">
+							<div class="price-cont adj hidden" id="adjustedPriceItem">
+								<span class="label">
+									<em>
+								<span class="field">
+									<span class="price" id="adjustedPrice">
+							</div>
+							<div class="price-tiers">
+								<div class="price-tier">
+									<span class="label">
+										<em>
+									<span class="field">
+										<span class="price">
+								</div>
+							</div>
+							<div class="required required-text">
+							<div class="product-option-cont">
+								<div class="label">
+									<label>
+										<em>
+										<span class="required">
+								<div class="field">
+									<span>
+										<select id="selectedOption_9_">
+							<div class="product-option-cont">
+								<div class="label">
+									<label>
+										<em>
+											<span class="required">
+								<div class="field">
+									<span>
+										<select id="selectedOption_2_">
+							<div class="product-option-cont">
+								<div class="label">
+									<label>
+										<em>
+									<span>
+										<input id="checkedOptional_3_">
+								<div class="field" id="checkedOptionalContainer(3)" style="display: none;">
+									<em>
+										<span class="required">
+									<span>
+										<select id="selectedOption_3_">
+							<div class="product-option-cont">
+								<div class="label">
+									<label>
+										<em>
+											<span class="required">
+								<div class="field">
+									<span>
+										<textarea>
+							<div class="availability">
+								<span class="label">
+									<em>
+								<span class="field">
+									<span id="prodAvailStatus">
+							<div class="available-quantity">
+								<span class="label">
+									<em>
+								<span class="field">
+									<span id="prodAvailQty">
+							<div class="quantity">
+								<span class="label">
+									<em>
+										<span class="required">
+								<span class="field">
+									<input>
+							<div class="buynow">
+								<span class="label">
+									<em>
+								<span class="field">
+									<input class="btn" value="Add To Cart">
+							</span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="product-carousel">
+				<div class="upsell upsell-twocol clearfix">
+					<h3 class="upsell-header">
+
+					<div class=" jcarousel-skin-tango">
+						<div class="jcarousel-container jcarousel-container-horizontal">
+							<div class="jcarousel-prev jcarousel-prev-horizontal">
+							<div class="jcarousel-next jcarousel-next-horizontal">
+							<div class="jcarousel-clip jcarousel-clip-horizontal">
+								<ul class="multiple-jcarousels jcarousel-list jcarousel-list-horizontal" id="upsellProducts">
+									<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal">
+										<table>
+											<tbody>
+												<tr>
+													<td>
+														<a>
+															<img>
+												<tr>
+													<td class="label">
+														<a>
+												<tr>
+													<td>
+					<h3 class="upsell-header">
+						... same stuff as above ...
+
+*/
+
+
+
+/* Product Detail page container */
+.product-detail {
+    margin-top: 10px;
+}
+
+
+
+
+
+/***************************** BEGIN LEFT AREA ***************************/
+
+
+
+/* Left side */
+.product-primary {
+	float:left;
+	width:335px
+}
+
+
+
+/* Main container for all images */
+.product-primary .imageanddetails {
+	margin:0; /* override template */
+}
+
+/* Center the "Click to Enlarge" text below the main product image (above the filmstrip) */
+.product-image {
+	text-align: center;
+	margin:0 !important; /* override template */
+}
+
+/* Large image displayed above filmstrip */
+.filmstrip-preview table {
+	width: 330px;
+	height: 330px;
+}
+
+/* Large image container (center image & alt text horizontally & vertically) */
+.filmstrip-preview table tr td {
+	vertical-align: middle;
+	text-align: center;
+	height:100%;
+}
+
+.filmstrip-preview td img {
+	max-width:100%;
+	max-height:100%;
+}
+
+/* Filmstrip thumbnail container */
+.filmstrip-thumbnails {
+	margin:5px 0;
+}
+
+/* Individual thumbnail image containers (center image horizontally & vertically) */
+.filmstrip-thumbnails td {
+	padding:0px 7px 7px 0px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* Product long description */
+.product-description {
+	padding:5px 0 5px 0 !important; /* Override template */
+}
+
+/* Set defaults back so the user can provide HTML */
+.product-description ul {
+	padding-left:20px;
+	margin: 1em 0 1em 20px;
+	list-style-type: disc;
+}
+
+/* Set defaults back so the user can provide HTML */
+.product-description ol {
+	padding-left:20px;
+	margin: 1em 0 1em 20px;
+	list-style-type: decimal;
+}
+
+
+
+/* Custom Attributes list */
+.product-features ul {
+	margin:0 !important; /* Override template */
+	list-style-type: none;
+}
+
+/* Individual custom attributes */
+.product-features li {
+	padding:3px 0;
+}
+
+/* Custom attribute labels */
+.product-features em {
+	font-style:normal;
+	font-weight:bold;
+}
+
+
+
+
+
+/* Product details list */
+.product-details ul {
+	margin:0 !important; /* Override template */
+	list-style-type: none;
+}
+
+/* Individual product detail items */
+.product-details li {
+	padding:3px 0; /* same as .product-features li */
+}
+
+/* Product detail labels */
+.product-details em {
+	font-style:normal;
+	font-weight:bold;
+}
+
+
+
+/* product bundle container */
+.product-bundle {
+	padding-top:20px;
+}
+
+/* product bundle title */
+.product-bundle u {
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/* Product details list */
+.product-bundle ul {
+	margin:0 !important; /* Override template */
+	list-style-type: none;
+}
+
+/* individual items in the bundle */
+.product-bundle li {
+	padding:3px 0;
+}
+
+/* link to individual product in the bundle */
+.product-bundle a {
+	text-decoration:none !important; /* override a:link */
+}
+
+
+
+/***************************** END LEFT AREA ***************************/
+
+
+
+
+
+
+
+
+
+/***************************** BEGIN RIGHT AREA ***************************/
+
+
+
+/* Right side */
+.product-secondary {
+	margin-left:345px;
+}
+
+/* Main product title */
+.product-detail-header h1 {
+	padding-bottom:5px;
+	margin:0 !important; /* Override templates */
+}
+
+/* Form that contains all the input elements */
+.product-options form {
+	padding-left:0 !important; /* Override templates */
+}
+
+/* Div based product options container */
+.product-options-div {
+}
+
+/* Option Titles/Labels */
+.product-options-div label {
+	display:inline; /* override layout_classic.css & layout_contemp.css */
+}
+
+/* Emphasized text for titles, labels, etc in the right side block */
+.product-options form em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Vertical spacing between the label and the option below it (if option is visible) */
+.product-option-cont .field {
+	padding-top:5px;
+}
+
+/* Textarea option */
+.product-option-cont textarea {
+	width:90%;
+}
+
+/* Each line item on the right side block */
+.price-cont,
+.availability,
+.price-tier,
+.required-text,
+.product-option-cont,
+.quantity,
+.buynow,
+.available-quantity,
+.shipping-note {
+	padding:5px 0;
+	margin:0;
+}
+
+/* Prices that are displayed */
+.price-cont .price {
+	display:block; /* make the span go to the next line */
+	font-size:2em;
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color:#cc0000;
+}
+
+/* Striked through price */
+.price-cont .strike {
+	color:inherit;
+}
+
+/* Sale price */
+.price-cont .sale {
+
+}
+
+/* Quantity Input box */
+.quantity .field {
+	display:block; /* make the span go to the next line */
+	padding-top:5px;
+}
+
+.buynow {
+	padding-top:10px;
+}
+
+/* "Add to Cart" button */
+.buynow input {
+}
+
+/* Hover on "Add to Cart" button */
+.buynow input:hover {
+}
+
+/* "* Marked fields are required" text */
+div.required {
+	margin:0; /* override layout_classic.css & layout_contemp.css */
+}
+
+
+
+/***************************** END RIGHT AREA ***************************/
+
+
+
+
+
+
+
+
+
+/***************************** BEGIN BOTTOM AREA ***************************/
+
+
+.product-carousel {
+	clear:both;
+}
+
+/* Container for the two carousels */
+.product-detail .upsell {
+   padding-top:30px;
+   margin-top:0; /* override jcarousel */
+}
+
+/* "Best Values" & "Related Items" text containers */
+.upsell h3 {
+	word-wrap:break-word;
+}
+
+/* containers for individual carousel items */
+.upsell td {
+	word-wrap: break-word;
+}
+
+/* Links in the carousel (both image links and text links */
+.upsell td a {
+    text-decoration: none;
+}
+
+/* Price */
+.product-carousel .price {
+	font-size:14px;
+}
+
+
+
+
+/***************************** END BOTTOM AREA ***************************/
+

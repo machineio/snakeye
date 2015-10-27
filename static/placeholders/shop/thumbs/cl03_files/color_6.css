@@ -1,0 +1,152 @@
+/**
+ * @file
+ * @project 816
+ * @package sftheme
+ * @site app1
+ */
+
+/** 
+ * ------------------------------------------------------------------
+ * @section MAIN LAYOUT
+ * ------------------------------------------------------------------
+ */
+
+body {
+	background-color:#ffffff;
+	color:#757575;
+}
+
+.sf_wrapper {
+	border-color:#DADADA;
+	background-color:#ffffff;
+}
+
+.sf_region2,
+.sf_header_wrapper {
+	background-color:#ffffff;
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section NAVIGATION
+ * ------------------------------------------------------------------
+ */
+ 
+
+/** 
+ * ------------------------------------------------------------------
+ * @section HEADER
+ * ------------------------------------------------------------------
+ */
+
+
+/** 
+ * ------------------------------------------------------------------
+ * @section CONTENT
+ * ------------------------------------------------------------------
+ */
+.sf_region4 {
+	background-color:#000;
+}
+
+/**
+ * @section buttons
+ */
+.btn {
+	border-color:#eee;
+	background-color:#A5ABAE;
+	color:#fff;
+}
+
+.btn:hover {
+	background-color:#b5bcbf;
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section SIDEBAR
+ * ------------------------------------------------------------------
+ */
+.widgetset .widget {
+	border-bottom:1px dotted #DADADA;
+}
+
+.widgetset .widget_header,
+.widgetset .widget_header a:link,
+.widgetset .widget_header a:visited,
+.widgetset .widget_header a:hover {
+	color:#bcbcbc;
+}
+
+/**
+ * @section widget forms
+ */
+.widgetset .widget_content select, 
+.widgetset .widget_content input[type="text"] {
+	border-color:#DADADA;
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section FOOTER
+ * ------------------------------------------------------------------
+ */
+.sf_footer {	
+	background-color: #edeeef;
+	color:#757575;
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section ADVANCED COLOR OPTIONS
+ * ------------------------------------------------------------------
+ */
+
+body { 	
+	background-color:#ffffff;
+}
+
+a:link {
+	color:#000000;
+}
+
+a:visited {
+	color:#000000;
+}
+
+a:hover {
+	color:#000000;
+}
+
+.sf_main_header { 	
+	color:#a5abae;
+}
+
+.sf_navigation ul li a {
+	color:#757575;
+}
+
+.sf_navigation ul li a:visited {
+	color:#757575;
+}
+
+.sf_navigation ul li a:hover {
+	color: #b5b5b5;
+}
+
+.sf_navigation .subnav li a {
+	color:#757575;
+}
+ 
+.sf_navigation .subnav  li a:visited {
+	color:#757575;
+}
+ 
+.sf_navigation .subnav  li a:hover {
+	background-color: #eee;
+	color:#757575;
+}
+
+.sf_pagetitle {
+	color:#a5abae;
+}

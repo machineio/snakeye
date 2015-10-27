@@ -1,0 +1,138 @@
+/**
+ * @file
+ * @project 816
+ * @package sftheme
+ * @site app3
+ */
+
+/** 
+ * ------------------------------------------------------------------
+ * @section CATEGORY MENU BAR
+ * ------------------------------------------------------------------
+ */
+
+/**
+ * @section cat subnav
+ */
+
+.sf_category_menubar ul li a:hover {
+ 	color: #bababa;	
+}
+
+.sf_category_menubar .subnav {
+	border-bottom:1px solid #DADADA;
+}
+ 
+.sf_category_menubar .subnav  li {
+	border-left:1px solid #DADADA;
+	border-right:1px solid #DADADA;
+	background-color:#FFFFFF;
+}
+ 
+.sf_category_menubar .subnav li a {
+	color:#757575;
+}
+ 
+.sf_category_menubar .subnav  li a:visited {
+	color:#757575;
+}
+ 
+.sf_category_menubar .subnav  li a:hover {
+	background-color: #eee;
+	color:#757575;
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section CONTENT
+ * ------------------------------------------------------------------
+ */
+#messages {
+	border-bottom:1px solid #DADADA;
+}
+
+.productTable,
+.productTable td, 
+.content-product,
+.upsell div,
+.product-primary,
+.product-secondary,
+.imageanddetails,
+.product-options,
+.member,
+fieldset,
+.paymentinfo,
+.shipped,
+.shiptotals,
+.printfooter,
+input[type="text"], 
+textarea {
+	border-color:#DADADA;
+}
+
+legend {
+	color:#757575;
+}
+
+.upsell .upsell-item-header td {
+	border-top:1px solid #DADADA;
+}
+
+.search-form-container {
+	background-color:#FAFAFA;
+	border:1px solid #DADADA;
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section SIDEBAR
+ * ------------------------------------------------------------------
+ */
+.featured-item .title {
+	color:#444444;
+}
+
+/**
+ * @section category-tracker
+ */
+.category-tracker a.active {
+	background-color:#dddddd;
+}
+
+.category-tracker .subcat a{
+	color:#757575;
+}
+
+.category-tracker .subcat a:visited {
+	color:#757575;
+}
+
+.category-tracker .subcat a:hover{
+	background-color:#eeeeee;
+}
+
+.category-tracker .subcat a.active {
+	background-color:#eeeeee;
+}
+
+.category-tracker .subcat2 a:hover{
+	background-color:transparent;
+}
+
+.category-tracker .subcat2 a.active {
+	background-color:transparent;
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section FOOTER
+ * ------------------------------------------------------------------
+ */
+.navigation2 a:link,
+.navigation2 a:visited {
+	color:#757575;
+}
+
+.navigation2 a:hover {
+	color:#999999;
+}
